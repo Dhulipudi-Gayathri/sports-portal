@@ -3,7 +3,7 @@
 <head>
 <style type="text/css">
 body{
-background-color:#800080;
+background-color:blue;
 }
 h3{
 font-family:Optima;
@@ -14,29 +14,44 @@ color:floralwhite;
 padding:25px;
 position:relative;
 width:425px;
-height:400px;
+height:350px;
 border-radius:25px;
 text-align:center;
-background-color:floralwhite;
+background-color:lightgrey;
 }
-.one .ele{
+.one:hover{
+background-color:white;
+}
+table{
+margin-left:30px;
+}
+td{
+padding-right:30px;
+}
+.two{
 font-size:20px;
 font-weight:500;
 text-align:left;
 line-height:50px;
 }
-input{
+.ele{
 height:40px;
-width:60%;
+width:150%;
 border-radius:20px;
 }
 input:hover{
-border-color:DeepPink;
+border-color:Blue;
+}
+input:active{
+color:Green;
 }
 .sub{
-width:50%;
+width:30%;
+height:40px;
+border-radius:20px;
 }
-input .sub:hover{
+.sub:hover{
+background-color:grey;
 }
 </style>
 </head>
@@ -46,34 +61,33 @@ input .sub:hover{
 <center>
 <div class="one">
 <form>
-<div class="ele">
-<span>Full Name :</span>
-<input type="text" placeholder="Enter Your Name" required>
-</div>
-<br>
-<div class="ele">
-<span>E-Mail     :</span>
-<input type="mail" placeholder="Enter mail id" required>
-</div>
-<br>
-<div class="ele">
-<span>Reg No    :</span>
-<input type="text" placeholder="Enter registration number" required>
-</div>
-<br>
-<div class="ele">
-<span>Password    :</span>
-<input type="password" placeholder="Enter password" required>
-</div>
+<table class="two">
+<tr>
+<td><span>Full Name</span></td>
+<td><input class="ele" type="text" placeholder="Enter Your Name" required></td>
+</tr>
+<tr>
+<td><span> E-Mail</span></td>
+<td><input class="ele" type="mail" placeholder="Enter Your Mail" required></td>
+</tr>
+<tr>
+<td><span> Reg No</span></td>
+<td><input  class="ele" type="text" placeholder="Enter Reg No " required></td>
+</tr>
+<tr>
+<td><span>PassWord</span></td>
+<td><input class="ele" type="password" placeholder="Enter Password " required></td>
+</tr>
+</table>
 <br>
 <br>
 <center>
-<div class="sub">
-<input type="submit" placeholder="REGISTER" required>
+<div >
+<input class="sub" type="submit" placeholder="REGISTER" required>
 </div>
 </center>
 </form>
-<p>Already have an account <a href="#">sign in</a></p>
+<p>Already have an account <a href="signin.html">sign in</a></p>
 </div>
 </body>
 </html>
