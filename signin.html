@@ -3,7 +3,7 @@
 <head>
 <style type="text/css">
 body{
-background-color:#800080;
+background-color:Blue;
 }
 h3{
 font-family:Optima;
@@ -14,12 +14,18 @@ color:floralwhite;
 padding:25px;
 position:relative;
 width:425px;
-height:270px;
+height:200px;
 border-radius:25px;
 text-align:center;
-background-color:floralwhite;
+background-color:lightgrey;
 }
-.one .ele{
+table{
+margin-left:30px;
+}
+td{
+padding-right:30px;
+}
+.two{
 font-size:20px;
 font-weight:500;
 text-align:left;
@@ -27,16 +33,20 @@ line-height:50px;
 }
 input{
 height:40px;
-width:60%;
+width:150%;
 border-radius:20px;
 }
 input:hover{
-border-color:DeepPink;
+border-color:Blue;
 }
 .sub{
-width:50%;
+width:30%;
 }
-input .sub:hover{
+.sub:hover{
+background-color:grey;
+}
+.one:hover{
+background-color:floralwhite;
 }
 </style>
 </head>
@@ -46,24 +56,23 @@ input .sub:hover{
 <center>
 <div class="one">
 <form>
-<div class="ele">
-<span>User Name :</span>
-<input type="text" placeholder="Enter Your Name" required>
-</div>
-<br>
-<div class="ele">
-<span>Password    :</span>
-<input type="password" placeholder="Enter password" required>
-</div>
+<table class="two">
+<tr>
+<td><span>User Name</span></td>
+<td><input type="text" placeholder="Enter Your Name" required></td>
+</tr>
+<tr>
+<td><span>PassWord</span></td>
+<td><input type="password" placeholder="Enter Your Password " required></td>
+</tr>
+</table>
 <br>
 <br>
 <center>
-<div class="sub">
-<input type="submit" placeholder="REGISTER" required>
+<div >
+<input class="sub" type="submit" placeholder="REGISTER" required>
 </div>
 </center>
 </form>
-<p>Don't have an account <a href="#">sign up</a></p>
-</div>
 </body>
 </html>
